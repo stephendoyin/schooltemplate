@@ -43,7 +43,7 @@ p {
 }
 
 .navigation {
-  height: 80px;
+  height: 100px;
   width: 100%;
   z-index: 100;
   position: relative;
@@ -63,7 +63,8 @@ p {
     text-decoration: none !important;
     color: var(--text-dark-blue);
     font-size: 1rem;
-    font-weight: 500;
+    font-weight: 600;
+    font-family: "Montserrat", sans-serif;
     &:hover {
       color: var(--text-dark-blue);
     }
@@ -225,6 +226,8 @@ p {
   }
   &__item {
     transform: translateX(-27.5px);
+    padding-bottom: 5rem;
+    position: relative;
     &__number {
       display: flex;
       justify-content: center;
@@ -233,6 +236,17 @@ p {
       min-width: 55px;
       border-radius: 50%;
       font-size: 1.4rem;
+    }
+    &:nth-child(1):before,
+    &:nth-child(2):before {
+      content: "";
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 27.5px;
+      z-index: -1;
+      width: 1px;
+      background: #f5bf45;
     }
   }
   &__content {
@@ -344,7 +358,7 @@ p {
   &__item {
     width: 50%;
     &:first-child {
-      padding: 6rem 2rem 6rem 7rem;
+      padding: 5rem 2rem 5rem 7rem;
     }
   }
   p {
@@ -374,4 +388,58 @@ p {
       text-decoration: none;
     }
   }
+}
+
+.bg {
+  position: absolute;
+  &__triangle {
+    width: 45px;
+    height: 45px;
+    background: url(../assets/Images/Polygon.svg);
+    background-size: contain;
+    left: 50%;
+    top: 100px;
+  }
+  &__big-circle {
+    height: 117px;
+    width: 117px;
+    background: url(../assets/Images/Ellipse.svg);
+    display: block;
+    background-size: contain;
+    z-index: -1;
+    &--bottom {
+      bottom: -47px;
+      left: -57px;
+    }
+    &--top {
+      top: -98px;
+      right: 74px;
+    }
+  }
+  &__circle {
+    height: 30px;
+    width: 30px;
+    background: #0c21ae;
+    border-radius: 50%;
+    &__hero-left {
+      left: 4rem;
+      top: 70%;
+    }
+    &__hero-right {
+      right: 3rem;
+      top: 90%;
+    }
+  }
+}
+
+.semi-ellipse {
+  left: 0;
+  top: 0;
+  width: 4rem;
+}
+
+.slice-poly {
+  left: 0;
+  bottom: 0;
+  width: 3rem;
 }

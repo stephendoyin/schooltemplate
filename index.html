@@ -18,12 +18,12 @@
     <title>Document</title>
   </head>
   <body>
-    <div class="hero">
+    <div class="hero position-relative">
       <header>
         <nav class="navigation position-absolute d-flex align-items-center">
-          <div class="container">
+          <div class="container-fluid px-5">
             <div
-              class="d-flex align-items-center justify-content-between navigation__inner"
+              class="px-sm-5 d-flex align-items-center justify-content-between navigation__inner"
             >
               <div class="navigation__logo-container">
                 <img src="" class="navigation__logo" alt="" />
@@ -68,13 +68,16 @@
             </nav>
           </div>
         </nav>
+        <span class="bg bg__circle bg__circle__hero-left"></span>
+        <span class="bg bg__circle bg__circle__hero-right"></span>
+        <span class="bg bg__triangle d-block"></span>
       </header>
 
       <div class="container">
         <div class="row align-items-center justify-content-between">
           <div class="col-md-7 position-relative">
             <img
-              src="assets/Images/hero-img.png"
+              src="assets/Images/hero-img.svg"
               width="100%"
               class="position-relative hero__img"
               alt=""
@@ -96,7 +99,17 @@
       </div>
     </div>
 
-    <section>
+    <section class="position-relative">
+      <img
+        src="assets/Images/semi-ellipse.png"
+        class="position-absolute semi-ellipse"
+        alt=""
+      />
+      <img
+        src="assets/Images/polygon-slice.svg"
+        class="position-absolute slice-poly"
+        alt=""
+      />
       <div class="container">
         <div class="row align-items-center">
           <div class="col-md-5 mt-5">
@@ -125,11 +138,12 @@
           How We Make It Possible
         </h2>
         <div class="d-flex align-items-center steps">
-          <div class="steps__side text-left">
+          <div class="steps__side text-left position-relative">
             <img src="assets/Images/kidoncmp.png" width="95%" alt="" />
+            <span class="bg bg__big-circle bg__big-circle--bottom"></span>
           </div>
           <div class="steps__side">
-            <div class="steps__item d-flex align-items-start mb-5 pb-5">
+            <div class="steps__item d-flex align-items-start">
               <div class="steps__item__number shadow bg-white">1</div>
 
               <div class="steps__content">
@@ -142,7 +156,7 @@
                 </p>
               </div>
             </div>
-            <div class="steps__item d-flex align-items-start mb-5 pb-5">
+            <div class="steps__item d-flex align-items-start">
               <div class="steps__item__number shadow bg-white">2</div>
 
               <div class="steps__content">
@@ -354,6 +368,7 @@
             <a href="" class="btn btn-white mt-3 px-5">Get Started</a>
           </div>
           <div class="mark-up__item text-center">
+            <span class="bg bg__big-circle bg__big-circle--top"></span>
             <img
               src="assets/Images/Vert.png"
               class="mark-up__img position-absolute"

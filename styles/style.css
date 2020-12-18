@@ -43,7 +43,7 @@ p {
 }
 
 .navigation {
-  height: 80px;
+  height: 100px;
   width: 100%;
   z-index: 100;
   position: relative;
@@ -65,7 +65,8 @@ p {
   text-decoration: none !important;
   color: var(--text-dark-blue);
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
 }
 
 .navigation__link:hover {
@@ -250,6 +251,8 @@ p {
 .steps__item {
   -webkit-transform: translateX(-27.5px);
           transform: translateX(-27.5px);
+  padding-bottom: 5rem;
+  position: relative;
 }
 
 .steps__item__number {
@@ -266,6 +269,17 @@ p {
   min-width: 55px;
   border-radius: 50%;
   font-size: 1.4rem;
+}
+
+.steps__item:nth-child(1):before, .steps__item:nth-child(2):before {
+  content: "";
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 27.5px;
+  z-index: -1;
+  width: 1px;
+  background: #f5bf45;
 }
 
 .steps__content {
@@ -390,7 +404,7 @@ p {
 }
 
 .mark-up__item:first-child {
-  padding: 6rem 2rem 6rem 7rem;
+  padding: 5rem 2rem 5rem 7rem;
 }
 
 .mark-up p {
@@ -416,12 +430,72 @@ p {
 }
 
 .footer__link {
-  margin-left: 2rem;
   display: inline-block;
   color: var(--text-dark-blue);
 }
 
 .footer__link:hover {
   text-decoration: none;
+}
+
+.bg {
+  position: absolute;
+}
+
+.bg__triangle {
+  width: 45px;
+  height: 45px;
+  background: url(../assets/Images/Polygon.svg);
+  background-size: contain;
+  left: 50%;
+  top: 100px;
+}
+
+.bg__big-circle {
+  height: 117px;
+  width: 117px;
+  background: url(../assets/Images/Ellipse.svg);
+  display: block;
+  background-size: contain;
+  z-index: -1;
+}
+
+.bg__big-circle--bottom {
+  bottom: -47px;
+  left: -57px;
+}
+
+.bg__big-circle--top {
+  top: -98px;
+  right: 74px;
+}
+
+.bg__circle {
+  height: 30px;
+  width: 30px;
+  background: #0c21ae;
+  border-radius: 50%;
+}
+
+.bg__circle__hero-left {
+  left: 4rem;
+  top: 70%;
+}
+
+.bg__circle__hero-right {
+  right: 3rem;
+  top: 90%;
+}
+
+.semi-ellipse {
+  left: 0;
+  top: 0;
+  width: 4rem;
+}
+
+.slice-poly {
+  left: 0;
+  bottom: 0;
+  width: 3rem;
 }
 /*# sourceMappingURL=style.css.map */
