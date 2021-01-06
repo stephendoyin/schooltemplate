@@ -16,9 +16,11 @@
     />
     <link rel="stylesheet" href="styles/style.css" />
     <title>Document</title>
+    <script src="https://unpkg.com/scrollreveal"></script>
   </head>
+
   <body>
-    <div class="hero position-relative">
+    <div class="hero position-relative" style="overflow-x: hidden">
       <header>
         <nav class="navigation position-absolute d-flex align-items-center">
           <div class="container-fluid px-sm-5">
@@ -79,11 +81,11 @@
             <img
               src="assets/Images/hero-img.svg"
               width="100%"
-              class="position-relative hero__img"
+              class="position-relative hero__img scaleUp"
               alt=""
             />
           </div>
-          <div class="col-md-5 mt-5 mt-md-0">
+          <div class="col-md-5 mt-5 mt-md-0 slideInLeft">
             <h5 class="title title--small pb-3">Schoolcredit</h5>
             <h1 class="hero__title pb-4">
               We simplify affordable financing for schools.
@@ -112,7 +114,7 @@
       />
       <div class="container">
         <div class="row align-items-center">
-          <div class="col-md-5 mt-5">
+          <div class="col-md-5 mt-5 slideInRight">
             <h5 class="title title--small pb-3">Our Purpose</h5>
             <h3 class="title title--section">
               We aim to increase the quality of education
@@ -125,7 +127,12 @@
             </p>
           </div>
           <div class="col-md-7">
-            <img src="assets/Images/student.png" width="100%" alt="" />
+            <img
+              src="assets/Images/student.png"
+              class="scaleUp"
+              width="100%"
+              alt=""
+            />
           </div>
         </div>
       </div>
@@ -133,48 +140,50 @@
 
     <section class="section">
       <div class="container">
-        <h5 class="title title--small pb-3 text-center">Lorem Ipsum</h5>
-        <h2 class="title text-center title--bigger mb-5 pb-5">
+        <h5 class="title title--small pb-3 text-center slideUp">Lorem Ipsum</h5>
+        <h2 class="title text-center title--bigger mb-5 pb-5 slideUp">
           How We Make It Possible
         </h2>
         <div class="d-flex align-items-center steps flex-wrap">
           <div class="steps__side text-left position-relative">
-            <img src="assets/Images/kidoncmp.png" alt="" />
+            <img src="assets/Images/kidoncmp.png" class="scaleUp" alt="" />
             <span class="bg bg__big-circle bg__big-circle--bottom"></span>
           </div>
           <div class="steps__side">
             <div class="steps__item d-flex align-items-start">
-              <div class="steps__item__number shadow bg-white">1</div>
+              <div class="steps__item__number shadow bg-white slideUp">1</div>
 
               <div class="steps__content">
-                <h4 class="steps__content__header title pb-2">
+                <h4 class="steps__content__header title pb-2 slideUp">
                   Visit our webapp
                 </h4>
-                <p>
+                <p class="slideUp">
                   Donec hendrerit gravida a nunc volutpat purus. Cras sit a
                   risus, velit porta etiam. Nunc et fringilla fusce.
                 </p>
               </div>
             </div>
             <div class="steps__item d-flex align-items-start">
-              <div class="steps__item__number shadow bg-white">2</div>
+              <div class="steps__item__number shadow bg-white slideUp">2</div>
 
               <div class="steps__content">
-                <h4 class="steps__content__header title pb-2">Savings</h4>
-                <p>
+                <h4 class="steps__content__header title pb-2 slideUp">
+                  Savings
+                </h4>
+                <p class="slideUp">
                   Download our app and automatically set aside a portion of your
                   income for your children's education.
                 </p>
               </div>
             </div>
             <div class="steps__item d-flex align-items-start">
-              <div class="steps__item__number shadow bg-white">3</div>
+              <div class="steps__item__number shadow bg-white slideUp">3</div>
 
               <div class="steps__content">
-                <h4 class="steps__content__header title pb-2">
+                <h4 class="steps__content__header slideUp title pb-2">
                   Pay school fees monthly
                 </h4>
-                <p>
+                <p class="slideUp">
                   We convert your children's school fees from a yearly/termly
                   obligation into a monthly subscription.
                 </p>
@@ -187,15 +196,15 @@
 
     <section class="section section--grad">
       <div class="container">
-        <h5 class="title title--small pb-3 text-center">Lorem Ipsum</h5>
-        <h2 class="title text-center title--bigger mb-5 pb-5">
+        <h5 class="title title--small pb-3 text-center slideUp">Lorem Ipsum</h5>
+        <h2 class="title text-center title--bigger mb-5 pb-5 slideUp">
           Financial Infrastructure for <br class="d-none d-sm-block" />
           Education in Africa
         </h2>
 
         <div class="row">
           <div
-            class="col-sm-6 col-md-4 mb-4 mb-md-0 align-items-stretch justify-content-between position-relative"
+            class="col-sm-6 slideUp col-md-4 mb-4 mb-md-0 align-items-stretch justify-content-between position-relative"
           >
             <div class="c-card position-relative">
               <div class="c-card__icon d-inline-block position-relative">
@@ -249,7 +258,7 @@
             </div>
           </div>
           <div
-            class="col-sm-6 col-md-4 mb-4 mb-md-0 align-items-stretch justify-content-between position-relative"
+            class="col-sm-6 slideUpDelay col-md-4 mb-4 mb-md-0 align-items-stretch justify-content-between position-relative"
           >
             <div class="c-card position-relative">
               <div class="c-card__icon d-inline-block position-relative">
@@ -321,7 +330,7 @@
             </div>
           </div>
           <div
-            class="col-sm-6 col-md-4 mb-4 mb-md-0 align-items-stretch justify-content-between position-relative"
+            class="col-sm-6 slideUpDelayTwo col-md-4 mb-4 mb-md-0 align-items-stretch justify-content-between position-relative"
           >
             <div class="c-card position-relative">
               <div class="c-card__icon d-inline-block position-relative">
@@ -431,17 +440,17 @@
           </div>
         </div>
 
-        <div class="strip bg-white py-4 px-3">
+        <div class="strip slideUp bg-white py-4 px-3">
           <div class="row align-items-center">
             <div class="col-6 col-md-4 border-right">
               <div class="d-flex align-items-center justify-content-center">
                 <div
-                  class="strip__avatar d-flex align-items-center justify-content-center"
+                  class="strip__avatar slideInLeft d-flex align-items-center justify-content-center"
                 >
                   <img src="assets/Images/user.svg" alt="user icon" />
                 </div>
                 <div class="py-4 pl-4">
-                  <h4 class="title mb-1">90&plus;</h4>
+                  <h4 class="title mb-1 slideUp">90&plus;</h4>
                   <p class="m-0">Students</p>
                 </div>
               </div>
@@ -449,12 +458,12 @@
             <div class="col-6 col-md-4 border-right">
               <div class="d-flex align-items-center justify-content-center">
                 <div
-                  class="strip__avatar d-flex align-items-center justify-content-center"
+                  class="strip__avatar slideInLeft d-flex align-items-center justify-content-center"
                 >
                   <img src="assets/Images/user.svg" alt="user icon" />
                 </div>
                 <div class="py-4 pl-4">
-                  <h4 class="title mb-1">30&plus;</h4>
+                  <h4 class="title mb-1 slideUpDelay">30&plus;</h4>
                   <p class="m-0">Locations</p>
                 </div>
               </div>
@@ -462,12 +471,12 @@
             <div class="col-6 col-md-4">
               <div class="d-flex align-items-center justify-content-center">
                 <div
-                  class="strip__avatar d-flex align-items-center justify-content-center"
+                  class="strip__avatar slideInLeft d-flex align-items-center justify-content-center"
                 >
                   <img src="assets/Images/location.svg" alt="user icon" />
                 </div>
                 <div class="py-4 pl-4">
-                  <h4 class="title mb-1">50&plus;</h4>
+                  <h4 class="title mb-1 slideUpDelayTwo">50&plus;</h4>
                   <p class="m-0">Locations</p>
                 </div>
               </div>
@@ -477,13 +486,21 @@
       </div>
     </section>
 
-    <section class="section section--added-space position-relative">
+    <section
+      class="section section--added-space position-relative"
+      style="overflow: hidden"
+    >
       <div class="container position-relative">
         <div class="row align-items-center justify-content-between">
           <div class="col-md-6">
-            <img src="assets/Images/family.png" width="100%" alt="" />
+            <img
+              src="assets/Images/family.png"
+              class="scaleUp"
+              width="100%"
+              alt=""
+            />
           </div>
-          <div class="col-md-6 mt-5 mt-md-0">
+          <div class="col-md-6 mt-5 mt-md-0 slideInLeft">
             <div class="pl-md-5">
               <h5 class="title title--small pb-3">Lorem Ipsum</h5>
               <h3 class="title title--section">
@@ -506,9 +523,9 @@
     <section class="section">
       <div class="container">
         <div
-          class="d-flex flex-wrap mark-up__container align-items-end position-relative"
+          class="d-flex slideUp flex-wrap mark-up__container align-items-end position-relative"
         >
-          <div class="mark-up__item">
+          <div class="mark-up__item slideInRightShort">
             <h3 class="title text-white mb-3">
               Lorem ipsum dolor amet, <br class="d-none d-sm-block" />
               consectetur
@@ -530,7 +547,7 @@
     <section class="section position-relative">
       <div class="container position-relative">
         <div class="row align-items-center justify-content-between">
-          <div class="col-md-6 mt-5 mt-md-0">
+          <div class="col-md-6 mt-5 mt-md-0 slideInRight">
             <div class="pr-md-5">
               <h5 class="title title--small pb-3">Lorem Ipsum</h5>
               <h3 class="title title--section">
@@ -546,23 +563,30 @@
             </div>
           </div>
           <div class="col-md-6 mt-4 mt-md-0">
-            <img src="assets/Images/girl.png" width="100%" alt="" />
+            <img
+              src="assets/Images/girl.png"
+              class="scaleUp"
+              width="100%"
+              alt=""
+            />
           </div>
         </div>
       </div>
     </section>
 
     <section>
-      <div class="container call-to-action p-5">
+      <div class="container call-to-action p-5 slideUp">
         <div
           class="d-flex flex-wrap align-items-center justify-content-between"
         >
           <div class="pl-3">
-            <h3 class="title mb-2">Why Schoolcredit?</h3>
-            <p>The real question shoould be “Why not Schoolcredit”?</p>
+            <h3 class="title mb-2 slideInRight">Why Schoolcredit?</h3>
+            <p class="slideInRight">
+              The real question shoould be “Why not Schoolcredit”?
+            </p>
           </div>
           <div>
-            <a href="" class="btn btn-primary px-5">Get Started</a>
+            <a href="" class="btn btn-primary px-5 scaleUp">Get Started</a>
           </div>
         </div>
       </div>
@@ -583,4 +607,5 @@
       </div>
     </footer>
   </body>
+  <script src="Script/index.js"></script>
 </html>
