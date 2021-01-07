@@ -524,3 +524,13 @@ p {
   bottom: 0;
   width: 3rem;
 }
+
+.svg-hero {
+  rect {
+    opacity: 1;
+    transition: all 6s linear;
+    &.invisible {
+      opacity: 0.1;
+    }
+  }
+}

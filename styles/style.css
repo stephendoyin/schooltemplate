@@ -585,4 +585,14 @@ p {
   bottom: 0;
   width: 3rem;
 }
+
+.svg-hero rect {
+  opacity: 1;
+  -webkit-transition: all 6s linear;
+  transition: all 6s linear;
+}
+
+.svg-hero rect.invisible {
+  opacity: 0.1;
+}
 /*# sourceMappingURL=style.css.map */
