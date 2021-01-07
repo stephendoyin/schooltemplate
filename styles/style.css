@@ -588,8 +588,8 @@ p {
 
 .svg-hero rect {
   opacity: 1;
-  -webkit-transition: all 6s linear;
-  transition: all 6s linear;
+  -webkit-transition: all 4s linear;
+  transition: all 4s linear;
 }
 
 .svg-hero rect.invisible {
