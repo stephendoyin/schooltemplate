@@ -31,7 +31,7 @@ function animate() {
     document
       .querySelectorAll(".svg-hero rect")
       [randNumTwo].setAttribute("y", yPos1);
-  }, 3000);
+  }, 1000);
 }
 
 animate();
