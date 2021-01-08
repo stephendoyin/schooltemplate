@@ -2,8 +2,8 @@ const svgRects = document.querySelectorAll(".svg-hero rect");
 
 function animate() {
   svgInterval = setInterval(() => {
-    let randNumOne = Math.floor(Math.random() * 8);
-    let randNumTwo = Math.floor(Math.random() * 8) + 8;
+    let randNumOne = Math.floor(Math.random() * 6);
+    let randNumTwo = Math.floor(Math.random() * 7) + 8;
 
     const xPos1 = document
       .querySelectorAll(".svg-hero rect")

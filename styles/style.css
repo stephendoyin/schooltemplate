@@ -586,6 +586,11 @@ p {
   width: 3rem;
 }
 
+.svg-hero {
+  width: 100%;
+  height: 346px;
+}
+
 .svg-hero rect {
   opacity: 1;
   -webkit-transition: all 3s linear;
@@ -594,5 +599,11 @@ p {
 
 .svg-hero rect.invisible {
   opacity: 0.1;
+}
+
+@media only screen and (min-width: 540px) {
+  .svg-hero {
+    height: 676px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
