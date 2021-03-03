@@ -339,6 +339,24 @@ p {
   &__title {
     font-size: 1.2rem;
   }
+  &__list {
+    list-style: none;
+    color: var(--p-color);
+    margin-bottom: 1.4rem;
+    li {
+      padding-bottom: 1.2rem;
+      display: flex;
+      align-items: flex-start;
+      svg {
+        min-width: 14px;
+        width: 14px;
+        max-height: 14px;
+        margin-top: 5px;
+        margin-right: 12px;
+        fill: rgba(55, 81, 255, 0.35);
+      }
+    }
+  }
   &:hover {
     filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.05));
     background: linear-gradient(180deg, #0b6cba 0%, #353396 100%);
@@ -347,6 +365,15 @@ p {
     }
     p {
       color: #fff;
+    }
+
+    ul {
+      li {
+        color: #fff;
+        svg path {
+          fill: #fff;
+        }
+      }
     }
     .c-card__circle {
       bottom: -6rem;
